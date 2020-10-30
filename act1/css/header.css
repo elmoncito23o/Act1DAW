@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: linear-gradient(-25deg, #0026F9, #001275);
+}
+header{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    display: inline-block;
+    position: fixed;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.centrar-elemento{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+header .logo img{
+    height: 100px;
+    float: left;
+}
+header nav{
+    float: right;
+    line-height: 100px;
+}
+header nav a{
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 5px;
+    line-height: normal;
+    font-size: 22px;
+    font-weight: bold;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition:all 500ms ease;
+
+}
+header nav a:hover{
+    border-radius: 30px;
+    color: white;
+    background: #0018A0;
+}
+.contenido{
+    padding-top: 120px;
+    height: calc(100vh - 100px - 88px);
+}
+.contenido p{
+    margin-bottom: 1em;
+}
+footer{
+    float: left;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.pie{
+    float: left;
+    width: 33.33%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+.pie a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+@media screen and (max-width: 950px) { 
+    header .logo img{
+        width: 20%;
+        height: 7%;
+        margin-left: 40%;
+        margin-right: 40%;
+    }
+    header nav{
+        width:100%;
+        text-align:center;
+        line-height: 50px;
+    }
+    header nav a{
+        font-size: 18px;
+    }
+    footer .pie a{
+        font-size: 14px;
+    }
+}
+
